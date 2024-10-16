@@ -39,18 +39,20 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 115px;
     border: 4px solid #31312F;
-    box-shadow: 0ppx 5px 15px #fff;
+    box-shadow: 0px 5px 15px rgba(49, 49, 47, 0.4);
 }
 
 .text-light a {
     font-family: 'Poppins', sans-serif;
     color: #31312F;
-    font-size: 30px;
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .text-light a:hover {
     color: rgb(112, 112, 112);
-    transition: .3s;
+    transition: 0.2s;
 }
 
 #header .perfil .social-links i {
@@ -62,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     display: inline;
     padding: 5px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 #header .perfil .social-links i:hover {
@@ -100,10 +102,10 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a, .nav-menu a:focus{
     display: flex;
     align-items: center;
-    color: #31312F;
+    color: #A09F8D;
     padding: 10px 12px;
     margin-bottom: 4px;
-    transition: 0.3s;
+    transition: 0.2s;
     font-size: 15px;
 }
 
@@ -169,4 +171,46 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     background: url(../img/teclado.gif) bottom center;
     background-size: cover;
+}
+
+#hero:before{
+    content: "";
+    background: rgba(226, 227, 221, 0.3);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+#hero .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+
+#hero .hero-container h1 {
+    margin: 0 0 30px 0;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 56px;
+    color: #31312F;
+    padding: 10px;
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+    text-shadow:0 10px 30px rgba(58, 58, 55, 0.5);
+}
+
+#hero p {
+    color: #3a3a37;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-family: 'League Spartan', sans-serif;
+    text-shadow:0 10px 10px rgb(0, 0, 0);
+}
+
+#hero p span {
+    text-shadow:0 15px 10px rgb(0, 0, 0);
+    color: #31312F;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #464642;
 }
