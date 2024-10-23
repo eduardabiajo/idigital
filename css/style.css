@@ -5,6 +5,7 @@ body {
     font-family: "Poppins", sans-serif;
     color:#3a3a37;
     background: #A09F8D;
+    text-decoration: none;
 }
 
 a {
@@ -218,4 +219,83 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3 {
     text-transform: uppercase;
     font-weight: 400;
+}
+
+@media(min-width: 1024px) {
+    #hero{
+        background-attachment: fixed;
+    }
+}
+@media(max-width: 768px){
+    #hero h1{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #hero h2{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+/* Seções gerais*/
+section{
+    padding: 60px 0 ;
+    overflow: hidden;
+}
+.section-bg{
+    background: #31312F;
+}
+.section-title{
+    padding-bottom: 30px;
+}
+.section-title h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #31312F;
+}
+.section-title h2:after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #31312F;
+    bottom: 0;
+    left: 0;
+}
+.section-title p{
+    margin-bottom: 0;
+    color: #121010;
+}
+/* # About*/
+.about .content h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: #31312F;
+}
+.about .content ul{
+    list-style: none;
+    padding: 0;
+}
+.about .content ul li{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.about .content ul strong{
+    margin-right: 10px;
+    color: #31312F;
+    font-weight: 200;
+}
+.about .content ul span{
+    color: #0c0b0b;
+    font-weight: 600;
+}
+.about .content p{
+    color: #31312F;
+    font-family: "Poppins";
+    font-weight: 600;
 }
